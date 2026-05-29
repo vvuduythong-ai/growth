@@ -287,6 +287,9 @@
   .leak-fix li{font-size:13px;color:var(--text);padding-left:18px;position:relative;line-height:1.5}
   .leak-fix li::before{content:"→";position:absolute;left:0;color:var(--gold);font-weight:700}
   .leak-fix li b{color:var(--text);font-weight:600}
+  .leak-q{list-style:none;display:flex;flex-direction:column;gap:6px;padding:0;margin:0 0 16px}
+  .leak-q li{font-size:13px;color:var(--muted);font-style:italic;padding-left:18px;position:relative;line-height:1.5}
+  .leak-q li::before{content:"?";position:absolute;left:0;color:#FF8A8A;font-weight:700;font-style:normal}
   .callout{background:var(--gold-dim);border:1px solid rgba(232,185,106,.25);border-radius:14px;padding:18px 22px;font-size:15px;color:var(--text)}
   .callout b{color:var(--gold)}
   .callout.green{background:var(--green-dim);border-color:rgba(61,220,151,.25)}
@@ -828,7 +831,7 @@
 
       <div class="panel">
         <h4>Funnel Diagnostic — chẩn đoán theo từng tầng</h4>
-        <p class="sub">Impression → Click → Landing page → Add to cart → Checkout → Booking. Drop-off ở mỗi bước báo chính xác layer nào đang rớt.</p>
+        <p class="sub">Impression → Click → Landing page → Room Selection → Checkout → Booking. Drop-off ở mỗi bước báo chính xác layer nào đang rớt.</p>
         <div class="funnel-diag-grid">
           <div class="funnel-vis">
             <div class="fstep" style="width:100%"><span>Impression</span><span class="sigtag">CTR · Hook · Thumbstop</span></div>
@@ -837,7 +840,7 @@
             <div class="farrow"><span class="ach">↓</span><span class="pct">~30% drop-off</span></div>
             <div class="fstep" style="width:76%"><span>Landing page</span><span class="sigtag">LP engagement</span></div>
             <div class="farrow worst"><span class="ach">↓</span><span class="pct">~75% drop-off</span><span class="tag-worst">worst leak</span></div>
-            <div class="fstep worst" style="width:60%"><span>Add to cart</span><span class="sigtag">Decision · Trust</span></div>
+            <div class="fstep worst" style="width:60%"><span>Room Selection</span><span class="sigtag">Decision · Trust</span></div>
             <div class="farrow"><span class="ach">↓</span><span class="pct">~40% drop-off</span></div>
             <div class="fstep" style="width:50%"><span>Checkout</span><span class="sigtag">Friction</span></div>
             <div class="farrow"><span class="ach">↓</span><span class="pct">~20% drop-off</span></div>
@@ -846,14 +849,19 @@
           <div class="leak-callout">
             <div class="leak-head">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4M12 17h.01"/></svg>
-              <span>Landing page → Add to cart</span>
+              <span>Landing page → Room Selection</span>
             </div>
-            <p class="leak-desc">Bước rớt mạnh nhất ở ngành khách sạn — khách vào trang nhưng không chọn phòng. Thường do hook không khớp tệp, hình phòng/giá chưa thuyết phục, hoặc USP chưa lên đầu thông điệp.</p>
-            <div class="leak-fix-h">Cách tôi fix</div>
+            <p class="leak-desc"><b style="color:var(--text)">Landing page → Room Selection</b> là điểm drop lớn trong hotel funnel. Phần lớn user rời đi vì LP chưa trả lời đủ nhanh:</p>
+            <ul class="leak-q">
+              <li>Why stay here?</li>
+              <li>Is it worth the price?</li>
+              <li>Is this suitable for my trip style?</li>
+            </ul>
+            <div class="leak-fix-h">Tôi tối ưu bằng cách</div>
             <ul class="leak-fix">
-              <li>Đẩy <b>Value</b> (ưu đãi) &amp; <b>Location</b> (gần ga/landmark) lên top hero LP.</li>
-              <li>A/B angle theo tệp (Solo / Couple / Friend) — tránh dùng chung 1 creative.</li>
-              <li>Làm rõ CTA "Chọn phòng", thêm proof (review, hình thật, ưu đãi rõ).</li>
+              <li>Push mạnh <b>Value &amp; Location</b> above the fold</li>
+              <li>Cá nhân hóa angle theo <b>traveler persona</b></li>
+              <li>Tăng booking intent bằng CTA rõ ràng, review thật và visual room thực tế</li>
             </ul>
           </div>
         </div>
