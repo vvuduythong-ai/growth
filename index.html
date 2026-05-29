@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vũ Duy Thông (Mason) — Growth Marketing Specialist</title>
+<meta name="description" content="Portfolio của Vũ Duy Thông (Mason) — Growth Marketing Specialist. Paid Social & Search, Landing Page, Marketing Automation. Kinh nghiệm: khách sạn 2–4★, dinh dưỡng." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#0B0E14; --surface:#151A24; --surface-2:#1C2230;
+    --border:rgba(255,255,255,.08); --border-strong:rgba(255,255,255,.14);
+    --text:#F5F6F8; --muted:#8A93A3; --muted-2:#5E6675;
+    --gold:#E8B96A; --gold-dim:rgba(232,185,106,.14);
+    --green:#3DDC97; --green-dim:rgba(61,220,151,.12);
+    --red:#FF6B6B; --blue:#6AA9FF;
+    --maxw:1120px;
+    --font-head:'Space Grotesk',system-ui,Segoe UI,sans-serif;
+    --font-body:'Inter',system-ui,Segoe UI,Roboto,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font-family:var(--font-body);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  h1,h2,h3,h4{font-family:var(--font-head);line-height:1.15;letter-spacing:-.01em}
+  .eyebrow{font-family:var(--font-head);font-size:13px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+  .muted{color:var(--muted)} .green{color:var(--green)} .gold{color:var(--gold)}
+  .ico{width:18px;height:18px;flex-shrink:0;display:inline-block;vertical-align:middle}
+
+  /* NAV */
+  nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);background:rgba(11,14,20,.72);border-bottom:1px solid var(--border)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:flex;align-items:center;gap:10px;font-family:var(--font-head);font-weight:700;font-size:16px}
+  .brand .dot{width:9px;height:9px;border-radius:50%;background:var(--green);box-shadow:0 0 14px var(--green)}
+  .nav-links{display:flex;align-items:center;gap:24px}
+  .nav-links a{font-size:14px;color:var(--muted);font-weight:500;transition:color .2s}
+  .nav-links a:hover{color:var(--text)}
+  .btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;padding:10px 18px;border-radius:10px;transition:transform .15s,box-shadow .2s,background .2s,border-color .2s;cursor:pointer;border:none}
+  .btn svg{width:17px;height:17px}
+  .btn-primary{background:var(--gold);color:#1a1305}
+  .btn-primary:hover{transform:translateY(-1px);box-shadow:0 8px 24px var(--gold-dim)}
+  .btn-ghost{background:transparent;color:var(--text);border:1px solid var(--border-strong)}
+  .btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+  .btn-sm{padding:8px 14px;font-size:13px}
+  .nav-cta{display:flex}
+  .burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px}
+  .burger span{width:22px;height:2px;background:var(--text);border-radius:2px}
+  .mobile-menu{display:none}
+
+  /* HERO */
+  .hero{position:relative;padding:96px 0 84px;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;z-index:0;background:radial-gradient(60% 50% at 78% 8%,rgba(232,185,106,.16),transparent 60%),radial-gradient(50% 45% at 12% 30%,rgba(61,220,151,.12),transparent 60%)}
+  .hero::after{content:"";position:absolute;inset:0;z-index:0;opacity:.4;background-image:linear-gradient(var(--border) 1px,transparent 1px),linear-gradient(90deg,var(--border) 1px,transparent 1px);background-size:46px 46px;mask-image:radial-gradient(70% 60% at 50% 30%,#000,transparent 75%)}
+  .hero-photo{position:absolute;top:0;right:0;bottom:0;width:48%;z-index:0;overflow:hidden;pointer-events:none}
+  .hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 22%;display:block;opacity:.55;filter:saturate(.7) brightness(1.02) contrast(1.04)}
+  .hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 0%,rgba(11,14,20,.78) 22%,rgba(11,14,20,.22) 60%,rgba(11,14,20,.35) 100%);pointer-events:none}
+  .hero .wrap{position:relative;z-index:1}
+  .avail{display:inline-flex;align-items:center;gap:9px;font-size:13px;font-weight:500;color:var(--green);background:var(--green-dim);border:1px solid rgba(61,220,151,.25);padding:7px 14px;border-radius:100px;margin-bottom:24px}
+  .avail .pulse{width:8px;height:8px;border-radius:50%;background:var(--green);position:relative}
+  .avail .pulse::after{content:"";position:absolute;inset:-4px;border-radius:50%;border:1px solid var(--green);animation:pulse 2s infinite}
+  @keyframes pulse{0%{transform:scale(.8);opacity:.8}100%{transform:scale(2.2);opacity:0}}
+  .hero h1{font-size:clamp(40px,6.4vw,68px);font-weight:700;margin-bottom:8px}
+  .hero h1 .name{background:linear-gradient(100deg,#fff 20%,var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero .role{font-family:var(--font-head);font-size:clamp(16px,2.3vw,21px);color:var(--muted);font-weight:500;margin-bottom:22px}
+  .hero .role b{color:var(--text)}
+  .hero .lede{max-width:660px;font-size:clamp(17px,1.9vw,19px);color:var(--muted);margin-bottom:30px}
+  .hero .lede b{color:var(--text);font-weight:600}
+  .lbl{font-family:var(--font-head);font-size:11.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-2);margin-bottom:10px}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+  .chip-pill{display:inline-flex;align-items:center;gap:9px;font-size:13.5px;color:var(--text);background:var(--surface);border:1px solid var(--border);padding:9px 15px;border-radius:100px}
+  .chip-pill svg{width:18px;height:18px;color:var(--gold)}
+  .chip-pill.skill{color:var(--muted);font-weight:500;padding:8px 14px}
+  .hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 18px}
+  .hero-contact{font-size:13.5px;color:var(--muted);display:flex;gap:18px;flex-wrap:wrap}
+  .hero-contact a{color:var(--muted);transition:color .2s;display:inline-flex;align-items:center;gap:7px}
+  .hero-contact a:hover{color:var(--gold)}
+  .hero-contact svg{width:16px;height:16px}
+
+  section{padding:74px 0;position:relative}
+  /* per-section color halos to distinguish sections */
+  #case{background:radial-gradient(80% 45% at 50% 0%,rgba(232,185,106,.11),transparent 65%)}
+  #systems{background:radial-gradient(80% 45% at 50% 0%,rgba(61,220,151,.1),transparent 65%)}
+  #other{background:radial-gradient(80% 45% at 50% 0%,rgba(232,185,106,.07),transparent 55%),radial-gradient(50% 35% at 50% 100%,rgba(61,220,151,.08),transparent 65%)}
+  #certs{background:radial-gradient(80% 45% at 50% 0%,rgba(106,169,255,.1),transparent 65%)}
+  #contact{background:radial-gradient(80% 55% at 50% 50%,rgba(232,185,106,.1),transparent 65%)}
+  .sec-head{max-width:760px;margin-bottom:40px}
+  .sec-head h2{font-size:clamp(27px,4vw,40px);font-weight:700;margin:12px 0 14px}
+  .sec-head p{color:var(--muted);font-size:16.5px}
+  .divider{height:1px;background:linear-gradient(90deg,transparent,var(--border-strong),transparent)}
+  .tag-latest{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--green);background:var(--green-dim);border:1px solid rgba(61,220,151,.3);padding:6px 13px;border-radius:100px;margin-bottom:14px}
+  .tag-latest svg{width:14px;height:14px}
+
+  /* CASE STUDY */
+  .ctx{max-width:780px;font-size:16.5px;color:var(--muted);margin-bottom:18px}
+  .ctx b{color:var(--text)}
+  .branches{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:38px}
+  .branch{display:inline-flex;align-items:center;gap:9px;font-size:13px;color:var(--muted);background:var(--surface);border:1px solid var(--border);padding:8px 14px;border-radius:10px}
+  .branch svg{width:17px;height:17px;color:var(--gold)}
+  .sub-h{font-family:var(--font-head);font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 16px}
+
+  /* chart */
+  .chart-wrap{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:26px 26px 20px}
+  .chart-wrap h4{font-size:17px;margin-bottom:4px}
+  .chart-wrap .sub{font-size:13.5px;color:var(--muted);margin-bottom:14px}
+  .chart-svg{width:100%;height:auto;display:block}
+  .chart-legend{display:flex;gap:20px;margin-top:12px;font-size:12.5px;color:var(--muted);flex-wrap:wrap}
+  .chart-legend i{font-style:normal;display:inline-flex;align-items:center;gap:7px}
+  .lg-bar{width:14px;height:14px;border-radius:3px;background:var(--gold);opacity:.85}
+  .lg-line{width:18px;height:3px;border-radius:2px;background:var(--green)}
+  .lg-dash{width:18px;height:0;border-top:2px dashed rgba(255,107,107,.7)}
+
+  .results{background:linear-gradient(160deg,var(--surface-2),var(--surface));border:1px solid var(--border-strong);border-radius:20px;padding:32px}
+  .results-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px 16px}
+  .res .v{font-family:var(--font-head);font-size:clamp(26px,3.4vw,36px);font-weight:700}
+  .res .v.g{color:var(--green)} .res .v.gold{color:var(--gold)}
+  .res .l{font-size:12.5px;color:var(--muted);margin-top:3px}
+
+  /* markets top 7 */
+  .mkt-block{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:28px}
+  .mkt-block p{color:var(--muted);font-size:15px;margin-bottom:20px}
+  .mkt-block p b{color:var(--text)}
+  .mrow{display:grid;grid-template-columns:140px 1fr 110px;align-items:center;gap:14px;margin-top:12px}
+  .mrow .mc{font-size:13.5px;color:var(--text);display:flex;align-items:center;gap:10px}
+  .flag-svg{width:24px;height:16px;border-radius:3px;overflow:hidden;display:block;flex-shrink:0;box-shadow:0 0 0 1px rgba(255,255,255,.1)}
+  .mtrack{height:12px;background:var(--surface-2);border-radius:7px;overflow:hidden}
+  .mfill{height:100%;width:0;border-radius:7px;background:linear-gradient(90deg,var(--gold),#f6d9a3);transition:width 1s cubic-bezier(.2,.7,.2,1)}
+  .mrow .mm{font-size:12.5px;color:var(--muted);text-align:right;white-space:nowrap}
+  .insights{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}
+  .ins{border-left:2px solid var(--gold);padding:2px 0 2px 14px}
+  .ins b{font-family:var(--font-head);font-size:14.5px;color:var(--text)}
+  .ins span{display:block;font-size:13.5px;color:var(--muted);margin-top:2px}
+  /* concrete example contrast */
+  .compare-example{margin-top:26px}
+  .compare-head{font-family:var(--font-head);font-size:11.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-2);margin-bottom:12px}
+  .compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .compare-card{background:var(--surface-2);border:1px solid var(--border);border-radius:12px;padding:20px 22px}
+  .compare-card.warn{border-color:rgba(255,138,138,.28);background:rgba(255,107,107,.05)}
+  .compare-card.win{border-color:rgba(61,220,151,.28);background:rgba(61,220,151,.05)}
+  .compare-h{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+  .compare-h .flag-svg{width:24px;height:16px}
+  .compare-name{font-family:var(--font-head);font-weight:600;font-size:15.5px;color:var(--text)}
+  .compare-metrics{display:flex;gap:24px;margin-bottom:12px}
+  .compare-metrics > div{flex:1}
+  .compare-metrics b{font-family:var(--font-head);font-size:22px;font-weight:700;display:block;line-height:1}
+  .compare-metrics b.warn-v{color:#FF8A8A}
+  .compare-metrics b.win-v{color:var(--green)}
+  .compare-metrics b.muted-v{color:var(--muted)}
+  .compare-metrics span{font-size:11.5px;color:var(--muted);display:block;margin-top:5px}
+  .compare-note{font-size:13px;color:var(--muted);line-height:1.55;margin:0}
+  .compare-conclusion{margin-top:16px;padding:18px 22px;background:var(--gold-dim);border:1px solid rgba(232,185,106,.25);border-radius:14px;font-size:14.5px;color:var(--text);line-height:1.6}
+  .compare-conclusion b{color:var(--gold)}
+
+  /* creatives */
+  .cre-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  figure.cre{margin:0;border-radius:14px;overflow:hidden;border:1px solid var(--border);background:var(--surface);aspect-ratio:4/5;position:relative}
+  figure.cre img{width:100%;height:100%;object-fit:cover;display:block}
+  .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;padding:18px;background:repeating-linear-gradient(45deg,var(--surface),var(--surface) 12px,var(--surface-2) 12px,var(--surface-2) 24px)}
+  .ph svg{width:30px;height:30px;color:var(--muted-2)}
+  .ph .t{font-family:var(--font-head);font-weight:600;font-size:13px;color:var(--text)}
+  .ph .s{font-size:11.5px;color:var(--muted-2)}
+  figure.cre figcaption{position:absolute;left:0;right:0;bottom:0;padding:12px 14px;font-size:12px;background:linear-gradient(transparent,rgba(0,0,0,.85));color:#fff}
+  figure.cre figcaption b{font-family:var(--font-head)}
+
+  /* KOL / UGC video creative */
+  .kol-intro{font-size:15px;color:var(--muted);max-width:780px;margin-bottom:22px;line-height:1.6}
+  .kol-intro b{color:var(--text)}
+  .kol-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .kol-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:border-color .25s,transform .25s}
+  .kol-card:hover{border-color:var(--border-strong);transform:translateY(-4px)}
+  .kol-card.win{border-color:rgba(61,220,151,.35);box-shadow:0 0 0 1px rgba(61,220,151,.08)}
+  .kol-thumb{position:relative;aspect-ratio:4/5;display:block;background:var(--surface-2);overflow:hidden}
+  .kol-thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+  .kol-thumb .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:5px;background:repeating-linear-gradient(135deg,var(--surface),var(--surface) 14px,var(--surface-2) 14px,var(--surface-2) 28px);padding:18px 18px 22px;text-align:center}
+  .play-icon{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:54px;height:54px;border-radius:50%;background:rgba(11,14,20,.78);border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;color:var(--gold);transition:transform .2s;backdrop-filter:blur(4px);z-index:2}
+  .kol-card:hover .play-icon{transform:translate(-50%,-50%) scale(1.08)}
+  .play-icon svg{width:22px;height:22px;margin-left:3px}
+  .kolname-ph{font-family:var(--font-head);font-weight:700;font-size:17px;color:var(--text);margin-top:6px}
+  .thumb-sub{font-size:11.5px;color:var(--muted)}
+  .igtag{position:absolute;top:11px;right:11px;display:inline-flex;align-items:center;gap:5px;background:rgba(11,14,20,.7);backdrop-filter:blur(6px);border:1px solid var(--border-strong);padding:5px 9px;border-radius:7px;font-size:11px;font-weight:600;color:var(--text)}
+  .igtag svg{width:13px;height:13px}
+  .top-badge{position:absolute;top:11px;left:11px;font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#1a1305;background:var(--gold);border-radius:6px;padding:4px 8px;z-index:2}
+  .kol-body{padding:18px 20px;display:flex;flex-direction:column;flex:1}
+  .kol-meta{font-size:11.5px;color:var(--muted);margin-bottom:8px;line-height:1.45}
+  .kol-meta b{color:var(--gold);font-weight:600}
+  .kol-card h5{font-family:var(--font-head);font-size:15.5px;font-weight:600;margin:0 0 12px;line-height:1.3;color:var(--text)}
+  .kol-stats{display:flex;gap:16px;margin-bottom:14px;flex-wrap:wrap;padding-bottom:14px;border-bottom:1px solid var(--border)}
+  .kol-stats .ks b{font-family:var(--font-head);font-size:17px;font-weight:700;color:var(--green);display:block;line-height:1}
+  .kol-stats .ks small{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-top:4px;display:block;font-style:normal}
+  .kol-stats.single .ks b{color:var(--gold);font-size:14.5px}
+  .kol-body p{font-size:13px;color:var(--muted);line-height:1.55;margin:0 0 14px;flex:1}
+  .kol-body p b{color:var(--text);font-weight:600}
+  .kol-cta{font-family:var(--font-head);font-weight:600;font-size:13px;color:var(--gold);display:inline-flex;align-items:center;gap:6px;align-self:flex-start;margin-top:auto}
+  .kol-cta svg{width:13px;height:13px}
+  .kol-card:hover .kol-cta{color:#f6d9a3}
+  .kol-pattern{margin-top:18px;padding:20px 24px;background:linear-gradient(160deg,rgba(61,220,151,.05),rgba(232,185,106,.03));border:1px solid rgba(232,185,106,.2);border-radius:14px;font-size:14px;color:var(--text);line-height:1.65}
+  .kol-pattern b{color:var(--gold);font-weight:600}
+
+  /* A/B static creative pairs */
+  .ab-section{margin-top:26px;max-width:832px}
+  .ab-intro{font-size:14.5px;color:var(--muted);max-width:780px;margin-bottom:20px;line-height:1.6}
+  .ab-intro b{color:var(--text)}
+  .ab-pair{margin-bottom:20px}
+  .ab-pair:last-child{margin-bottom:0}
+  .ab-pair-h{font-family:var(--font-head);font-size:11.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;display:flex;align-items:center;gap:9px}
+  .ab-pair-h::before{content:"A/B";font-family:var(--font-head);font-weight:700;font-size:9.5px;letter-spacing:.04em;background:var(--gold);color:#1a1305;padding:3px 7px;border-radius:5px;line-height:1}
+  .ab-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .ab-card{margin:0;border-radius:12px;overflow:hidden;border:1px solid var(--border);background:var(--surface);display:flex;flex-direction:column;transition:border-color .25s,transform .25s}
+  .ab-card:hover{border-color:var(--border-strong);transform:translateY(-2px)}
+  .ab-thumb{position:relative;aspect-ratio:4/5;background:#0a0d12;overflow:hidden}
+  .ab-thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block}
+  .ab-thumb .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;background:repeating-linear-gradient(45deg,var(--surface),var(--surface) 12px,var(--surface-2) 12px,var(--surface-2) 24px);text-align:center;padding:18px}
+  .ab-thumb .ph svg{width:28px;height:28px;color:var(--muted-2)}
+  .ab-thumb .ph .t{font-family:var(--font-head);font-weight:600;font-size:12.5px;color:var(--text)}
+  .ab-thumb .ph .s{font-size:11px;color:var(--muted-2);line-height:1.4}
+  .ab-tag{position:absolute;top:11px;left:11px;font-family:var(--font-head);font-weight:700;font-size:10px;letter-spacing:.08em;color:var(--text);background:rgba(11,14,20,.78);backdrop-filter:blur(6px);border:1px solid var(--border-strong);padding:4px 8px;border-radius:6px;z-index:2}
+  .ab-tag.var-a{border-color:rgba(61,220,151,.4);color:var(--green)}
+  .ab-tag.var-b{border-color:rgba(232,185,106,.4);color:var(--gold)}
+  .ab-card figcaption{padding:11px 14px 12px;font-size:11.5px;color:var(--muted);line-height:1.5}
+  .ab-card figcaption b{color:var(--text);font-weight:600;font-size:12px}
+  .ab-card figcaption .angle{font-size:10.5px;color:var(--muted-2);font-style:italic;display:block;margin-top:3px}
+  .ab-tag{font-size:9.5px;padding:3px 7px}
+
+  /* More creative — mini slider (3 per page) */
+  .more-creative{margin-top:24px;max-width:832px;position:relative}
+  .more-h{font-family:var(--font-head);font-size:11.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+  .more-h b{color:var(--text);font-weight:600}
+  .more-slider{position:relative}
+  .more-vp{overflow:hidden;border-radius:10px}
+  .more-row{display:flex;gap:10px;transition:transform .55s cubic-bezier(.2,.7,.2,1)}
+  .more-card{flex:0 0 calc((100% - 20px) / 3);margin:0;aspect-ratio:4/5;border-radius:10px;overflow:hidden;border:1px solid var(--border);background:#0a0d12;position:relative;transition:border-color .25s,transform .25s}
+  .more-card:hover{border-color:var(--border-strong);transform:translateY(-2px)}
+  .more-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block}
+  .more-card .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;background:repeating-linear-gradient(45deg,var(--surface),var(--surface) 10px,var(--surface-2) 10px,var(--surface-2) 20px);text-align:center;padding:12px}
+  .more-card .ph svg{width:20px;height:20px;color:var(--muted-2)}
+  .more-card .ph .t{font-family:var(--font-head);font-weight:600;font-size:10px;color:var(--text);line-height:1.3}
+  .more-card .ph .s{font-size:9px;color:var(--muted-2);line-height:1.3}
+  .more-card figcaption{position:absolute;left:0;right:0;bottom:0;padding:6px 9px 7px;font-size:10px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.88));font-family:var(--font-head);font-weight:500;letter-spacing:.02em;line-height:1.3}
+  .more-btn{position:absolute;top:50%;transform:translateY(-50%);width:36px;height:36px;border-radius:50%;background:rgba(11,14,20,.78);border:1px solid var(--border-strong);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:3;backdrop-filter:blur(6px);transition:border-color .2s,color .2s}
+  .more-btn:hover{border-color:var(--gold);color:var(--gold)}
+  .more-btn svg{width:16px;height:16px}
+  .more-btn.prev{left:-14px} .more-btn.next{right:-14px}
+  .more-dots{display:flex;gap:6px;justify-content:center;margin-top:12px}
+  .more-dot{width:7px;height:7px;border-radius:50%;background:var(--border-strong);border:none;cursor:pointer;padding:0;transition:.25s}
+  .more-dot.active{background:var(--gold);width:20px;border-radius:4px}
+
+  /* LP thumb logo variant */
+  .lp-thumb.logo-thumb{background:#4D6C46;display:flex;align-items:center;justify-content:center}
+  .lp-thumb.logo-thumb img{position:static;width:auto;height:auto;max-width:62%;max-height:72%;object-fit:contain;inset:auto}
+
+  /* SYSTEMS */
+  .method{display:grid;grid-template-columns:1fr;gap:18px}
+  .panel{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:28px}
+  .panel h4{font-size:18px;margin-bottom:4px}
+  .panel .sub{font-size:13.5px;color:var(--muted);margin-bottom:18px}
+  .panel h5{font-family:var(--font-head);font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-2);margin:20px 0 10px}
+  .pills{display:flex;flex-wrap:wrap;gap:8px}
+  .pill{font-size:12.5px;padding:6px 12px;border-radius:100px;border:1px solid var(--border);color:var(--muted);background:var(--surface-2)}
+  .pill.k{color:var(--text);border-color:var(--border-strong)}
+  .funnel-stage{border-radius:12px;padding:16px 18px;background:var(--surface-2);border:1px solid var(--border);margin-bottom:12px}
+  .funnel-stage .ftop{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+  .funnel-stage .tag{font-family:var(--font-head);font-weight:700;font-size:14px;color:var(--gold)}
+  .funnel-stage .role{font-size:13px;color:var(--muted)}
+  .sig{display:flex;flex-wrap:wrap;gap:7px}
+  .sig span{font-size:12px;padding:4px 10px;border-radius:7px;background:rgba(255,255,255,.04);border:1px solid var(--border);color:var(--muted)}
+  .f-tof{border-left:3px solid var(--green)} .f-mof{border-left:3px solid var(--gold)} .f-bof{border-left:3px solid var(--blue)}
+  /* funnel diagnostic */
+  .funnel-diag-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:start;margin-top:8px}
+  .funnel-vis{display:flex;flex-direction:column;gap:5px;align-items:center}
+  .fstep{background:var(--surface-2);border:1px solid var(--border);border-radius:10px;padding:13px 18px;display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:var(--font-head);font-weight:600;font-size:14px;color:var(--text);transition:.25s}
+  .fstep.worst{border-color:rgba(255,107,107,.5);background:rgba(255,107,107,.08)}
+  .sigtag{font-family:var(--font-body);font-weight:500;font-size:11px;color:var(--muted);padding:3px 9px;border:1px solid var(--border);border-radius:6px;background:rgba(255,255,255,.02);white-space:nowrap}
+  .fstep.worst .sigtag{color:#FF8A8A;border-color:rgba(255,107,107,.3)}
+  .farrow{padding:2px 0;display:flex;align-items:center;justify-content:center;gap:10px;font-size:12px;color:var(--muted-2)}
+  .farrow .ach{font-weight:700;font-size:13px}
+  .farrow .pct{font-family:var(--font-head);font-weight:600;color:var(--muted)}
+  .farrow.worst .pct{color:#FF8A8A}
+  .tag-worst{font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#FF8A8A;background:rgba(255,107,107,.12);border:1px solid rgba(255,107,107,.3);border-radius:5px;padding:2px 7px}
+  .leak-callout{background:rgba(255,107,107,.06);border:1px solid rgba(255,107,107,.22);border-radius:14px;padding:22px 24px;align-self:start}
+  .leak-head{display:flex;align-items:center;gap:9px;font-family:var(--font-head);font-weight:600;font-size:15.5px;color:#FF8A8A;margin-bottom:10px}
+  .leak-head svg{width:18px;height:18px;flex-shrink:0}
+  .leak-desc{font-size:13.5px;color:var(--muted);margin-bottom:16px;line-height:1.55}
+  .leak-fix-h{font-family:var(--font-head);font-size:11.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-2);margin-bottom:9px}
+  .leak-fix{list-style:none;display:flex;flex-direction:column;gap:8px;padding:0}
+  .leak-fix li{font-size:13px;color:var(--text);padding-left:18px;position:relative;line-height:1.5}
+  .leak-fix li::before{content:"→";position:absolute;left:0;color:var(--gold);font-weight:700}
+  .leak-fix li b{color:var(--text);font-weight:600}
+  .callout{background:var(--gold-dim);border:1px solid rgba(232,185,106,.25);border-radius:14px;padding:18px 22px;font-size:15px;color:var(--text)}
+  .callout b{color:var(--gold)}
+  .callout.green{background:var(--green-dim);border-color:rgba(61,220,151,.25)}
+  .callout.green b{color:var(--green)}
+
+  /* FEATURED LANDING PAGE */
+  .lp-feature{display:grid;grid-template-columns:1.1fr 1fr;gap:0;background:var(--surface);border:1px solid var(--border);border-radius:16px;overflow:hidden;transition:border-color .25s,transform .25s;color:inherit;text-decoration:none}
+  .lp-feature:hover{border-color:var(--gold);transform:translateY(-3px)}
+  .lp-thumb{position:relative;min-height:260px;background:var(--surface-2)}
+  .lp-thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+  .lp-body{padding:30px 34px;display:flex;flex-direction:column;justify-content:center}
+  .lp-domain{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-head);font-size:12.5px;font-weight:600;letter-spacing:.04em;color:var(--gold);margin-bottom:10px}
+  .lp-domain svg{width:14px;height:14px}
+  .lp-body h4{font-size:clamp(18px,2.2vw,22px);margin-bottom:12px;line-height:1.25}
+  .lp-body p{font-size:14.5px;color:var(--muted);margin-bottom:18px;line-height:1.6}
+  .lp-body p b{color:var(--text)}
+  .lp-cta{font-family:var(--font-head);font-weight:600;font-size:14px;color:var(--gold);display:inline-flex;align-items:center;gap:7px}
+  .lp-cta svg{width:14px;height:14px}
+  .lp-feature:hover .lp-cta{color:#f6d9a3}
+
+  /* OTHER WORK SLIDER */
+  .slider{position:relative}
+  .slider-vp{overflow:hidden;border-radius:18px;border:1px solid var(--border)}
+  .slider-track{display:flex;transition:transform .55s cubic-bezier(.2,.7,.2,1)}
+  .slide{min-width:100%;display:grid;grid-template-columns:1.05fr 1fr;background:var(--surface)}
+  .slide-img{position:relative;min-height:320px}
+  .slide-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+  .slide-info{padding:34px 36px;display:flex;flex-direction:column;justify-content:center}
+  .slide-info .ohead{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+  .slide-info .ind{font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--gold)}
+  .slide-info .period{font-size:12px;color:var(--muted-2);white-space:nowrap}
+  .slide-info h4{font-size:clamp(20px,2.4vw,24px);margin:6px 0 16px}
+  .ometrics{display:flex;flex-wrap:wrap;gap:16px 26px;margin-bottom:14px}
+  .om b{font-family:var(--font-head);font-size:24px;font-weight:700;display:block;line-height:1;color:var(--green)}
+  .om span{font-size:12px;color:var(--muted);margin-top:5px;display:block}
+  .osub{font-size:13px;color:var(--muted);border-top:1px solid var(--border);padding-top:12px}
+  .oinsight{font-size:13.5px;color:var(--text);margin-top:10px}
+  .oinsight b{color:var(--gold)}
+  .slider-btn{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;background:rgba(11,14,20,.72);border:1px solid var(--border-strong);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:3;backdrop-filter:blur(6px);transition:border-color .2s}
+  .slider-btn:hover{border-color:var(--gold);color:var(--gold)}
+  .slider-btn svg{width:20px;height:20px}
+  .slider-btn.prev{left:14px}.slider-btn.next{right:14px}
+  .next-slide{background:linear-gradient(150deg,rgba(232,185,106,.22),rgba(61,220,151,.08) 55%,var(--surface-2));display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+  .next-slide::after{content:"";position:absolute;inset:0;opacity:.35;background-image:linear-gradient(rgba(232,185,106,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(232,185,106,.08) 1px,transparent 1px);background-size:32px 32px;mask-image:radial-gradient(60% 60% at 50% 50%,#000,transparent 75%)}
+  .next-visual{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;padding:30px}
+  .next-visual .sparkle{color:var(--gold)}
+  .next-visual .sparkle svg{width:78px;height:78px;filter:drop-shadow(0 4px 18px rgba(232,185,106,.25))}
+  .next-label{font-family:var(--font-head);font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  .next-label .blank{display:inline-block;border-bottom:2px solid var(--gold);min-width:60px;margin-left:6px;height:1em;vertical-align:bottom}
+  .slider-dots{display:flex;gap:8px;justify-content:center;margin-top:18px}
+  .dot{width:9px;height:9px;border-radius:50%;background:var(--border-strong);border:none;cursor:pointer;padding:0;transition:.25s}
+  .dot.active{background:var(--gold);width:24px;border-radius:5px}
+
+  /* CERTS */
+  .cert-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .cert-card{display:flex;gap:16px;align-items:center;background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:22px 24px;transition:border-color .25s,transform .25s}
+  .cert-card:hover{border-color:var(--gold);transform:translateY(-3px)}
+  .cert-logo{width:54px;height:54px;border-radius:13px;background:#fff;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 2px 12px rgba(0,0,0,.3)}
+  .cert-logo svg{width:34px;height:34px;display:block}
+  .cert-body{flex:1;min-width:0}
+  .cert-body .iss{font-size:11.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+  .cert-body h4{font-size:16px;line-height:1.25;margin-bottom:6px}
+  .cert-body .verify{font-size:12.5px;color:var(--muted-2)}
+  .cert-card:hover .verify{color:var(--gold)}
+  .cert-arrow{width:34px;height:34px;border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--muted);flex-shrink:0;transition:.2s}
+  .cert-arrow svg{width:16px;height:16px}
+  .cert-card:hover .cert-arrow{border-color:var(--gold);color:var(--gold)}
+
+  /* CONTACT */
+  .contact{background:linear-gradient(160deg,var(--surface-2),var(--surface));border:1px solid var(--border-strong);border-radius:22px;padding:52px 40px;text-align:center}
+  .contact h2{font-size:clamp(26px,4vw,38px);margin-bottom:12px}
+  .contact p{color:var(--muted);max-width:560px;margin:0 auto 28px;font-size:16.5px}
+  .contact p b{color:var(--text)}
+  .contact-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  footer{padding:38px 0;border-top:1px solid var(--border);margin-top:58px}
+  .foot-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:flex-start}
+  .foot-inner .src{font-size:12.5px;color:var(--muted-2);max-width:560px}
+
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  @media(max-width:900px){
+    .nav-links,.nav-cta{display:none}
+    .burger{display:flex}
+    .mobile-menu{display:none;flex-direction:column;gap:4px;padding:0 24px 18px}
+    .mobile-menu.open{display:flex}
+    .mobile-menu a{padding:12px 0;border-top:1px solid var(--border);color:var(--muted)}
+    .hero-photo{width:38%;opacity:.85}
+    .results-grid{grid-template-columns:repeat(2,1fr)}
+    .method,.insights,.funnel-diag-grid,.compare-grid{grid-template-columns:1fr}
+    .cre-grid,.cert-grid,.kol-grid,.ab-grid{grid-template-columns:1fr 1fr}
+    .lp-feature{grid-template-columns:1fr}
+    .lp-thumb{min-height:200px}
+    .slide{grid-template-columns:1fr}
+    .slide-img{min-height:210px}
+  }
+  @media(max-width:560px){
+    .cre-grid,.cert-grid,.kol-grid,.ab-grid{grid-template-columns:1fr}
+    .more-card{flex:0 0 calc((100% - 10px) / 2)}  /* 2 visible per page on mobile */
+    .more-btn.prev{left:6px} .more-btn.next{right:6px}
+    .hero-photo{display:none}
+    .results-grid{grid-template-columns:1fr 1fr}
+    .mrow{grid-template-columns:108px 1fr 64px;gap:9px}
+    section{padding:54px 0}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="wrap nav-inner">
+    <a href="#about" class="brand"><span class="dot"></span> Vũ Duy Thông</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#case">Case Study</a>
+      <a href="#systems">Systems</a>
+      <a href="#other">Dự án khác</a>
+      <a href="#contact">Liên hệ</a>
+    </div>
+    <div class="nav-cta"><a href="#contact" class="btn btn-primary btn-sm">Liên hệ</a></div>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a><a href="#case">Case Study</a><a href="#systems">Systems</a><a href="#other">Dự án khác</a><a href="#contact">Liên hệ</a>
+  </div>
+</nav>
+
+<!-- HERO / ABOUT -->
+<header class="hero" id="about">
+  <div class="hero-photo">
+    <img src="assets/meta/mason-hero.jpg" alt="Vũ Duy Thông" onerror="this.parentNode.style.display='none'">
+  </div>
+  <div class="wrap">
+    <div class="avail"><span class="pulse"></span> Đang nhận dự án freelance · Paid Media</div>
+    <h1>Vũ Duy Thông <span class="name">(Mason)</span></h1>
+    <div class="role"><b>Growth Marketing Specialist</b></div>
+    <p class="lede">Ads năm 2026 không còn là cuộc chơi của những tactics nhỏ lẻ, mà là khả năng <b>xây dựng hệ thống testing
+      để gửi đúng signal cho thuật toán</b> và scale hiệu quả.</p>
+
+    <div class="lbl">Lĩnh vực đã làm</div>
+    <div class="chips">
+      <span class="chip-pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M6 21V5a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v16"/><path d="M9.5 8h.01M14.5 8h.01M9.5 11.5h.01M14.5 11.5h.01"/><path d="M10 21v-3a2 2 0 0 1 4 0v3"/></svg>
+        Khách sạn 2–4★</span>
+      <span class="chip-pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13C4 6 9 4 20 4c0 9-5 16-9 16z"/><path d="M5 19c4-6 8-8 12-9"/></svg>
+        Dinh dưỡng</span>
+    </div>
+    <div class="lbl">Kỹ năng chính</div>
+    <div class="chips">
+      <span class="chip-pill skill">Meta Ads</span>
+      <span class="chip-pill skill">Google Ads</span>
+      <span class="chip-pill skill">Landing Page</span>
+      <span class="chip-pill skill">Marketing Automation</span>
+    </div>
+
+    <div class="hero-cta">
+      <a href="#case" class="btn btn-primary">Xem case study
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="https://www.linkedin.com/in/vuduythong" target="_blank" rel="noopener" class="btn btn-ghost">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3.2 9h3.6v11.5H3.2zM9.3 9h3.45v1.57h.05c.48-.9 1.66-1.85 3.42-1.85 3.66 0 4.33 2.4 4.33 5.53v6.25h-3.6v-5.54c0-1.32-.02-3.02-1.84-3.02-1.85 0-2.13 1.44-2.13 2.92v5.64H9.3z"/></svg>
+        LinkedIn</a>
+    </div>
+    <div class="hero-contact">
+      <a href="mailto:vvuduythong@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg> vvuduythong@gmail.com</a>
+      <a href="tel:+84362167934"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h3.5l1.8 4.5-2.3 1.5a12 12 0 0 0 5 5l1.5-2.3 4.5 1.8V19a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg> 0362 167 934</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap"><div class="divider"></div></div>
+
+<!-- ===================== CASE STUDY — MEANDER (LATEST) ===================== -->
+<section id="case">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="tag-latest">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.9 6.5L20 10l-6.1 1.5L12 18l-1.9-6.5L4 10l6.1-1.5z"/></svg>
+        Dự án mới nhất · 06/2025 → nay</div>
+      <h2>MEANDER Group</h2>
+    </div>
+
+    <!-- Context -->
+    <p class="ctx reveal"><span class="sub-h" style="display:block">Bối cảnh</span>
+      MEANDER Group gồm <b>3 khách sạn tại Đài Loan</b>, <b>1 quán F&amp;B Bread and Espresso</b>,
+      <b>1 khách sạn tại Việt Nam</b> và <b>1 khách sạn tại Nhật Bản</b> — các khách sạn đạt chuẩn <b>2–4★</b>.
+      Khi tôi tham gia vào 06/2025, hệ thống ads gần như <b>chưa được xây dựng bài bản</b>. Tôi bắt đầu từ nền tảng —
+      tracking, account structure, creative system và landing page — sau đó launch, testing và scale toàn bộ hệ thống.</p>
+
+    <!-- ROAS growth chart -->
+    <p class="sub-h reveal">Tăng trưởng ROAS qua các tháng</p>
+    <div class="chart-wrap reveal">
+      <h4>Từ con số 0 đến ROAS 6x+ ổn định</h4>
+      <p class="sub">Launch ads 08/2025. Spend tăng dần, ROAS đẩy từ 0x → 4x → 6x+.</p>
+      <svg class="chart-svg" viewBox="0 0 760 300" role="img" aria-label="Biểu đồ tăng trưởng ROAS theo tháng">
+        <line x1="50" y1="58" x2="740" y2="58" stroke="rgba(255,255,255,.05)"/>
+        <line x1="50" y1="130" x2="740" y2="130" stroke="rgba(255,255,255,.05)"/>
+        <line x1="50" y1="250" x2="740" y2="250" stroke="rgba(255,255,255,.12)"/>
+        <!-- setup shade -->
+        <rect x="50" y="30" width="172" height="220" fill="rgba(255,255,255,.025)"/>
+        <!-- launch marker -->
+        <line x1="222" y1="40" x2="222" y2="250" stroke="rgba(61,220,151,.45)" stroke-width="1.5" stroke-dasharray="4 4"/>
+        <text x="228" y="62" fill="#3DDC97" font-family="Space Grotesk" font-size="11" font-weight="600">Launch 08/2025</text>
+        <!-- Spend bars (monthly VND) -->
+        <g fill="#E8B96A" opacity=".82">
+          <rect x="179.75" y="241.75" width="28" height="8.25" rx="2"/>
+          <rect x="237.25" y="237.14" width="28" height="12.86" rx="2"/>
+          <rect x="294.75" y="221.22" width="28" height="28.78" rx="2"/>
+          <rect x="352.25" y="148.35" width="28" height="101.65" rx="2"/>
+          <rect x="409.75" y="55.60" width="28" height="194.40" rx="2"/>
+          <rect x="467.25" y="134.22" width="28" height="115.78" rx="2"/>
+          <rect x="524.75" y="98.47" width="28" height="151.53" rx="2"/>
+          <rect x="582.25" y="50.00" width="28" height="200.00" rx="2"/>
+          <rect x="639.75" y="103.43" width="28" height="146.57" rx="2"/>
+          <rect x="697.25" y="156.92" width="28" height="93.08" rx="2"/>
+        </g>
+        <!-- breakeven line ROAS=1.0 (on top of bars) -->
+        <line x1="50" y1="220" x2="740" y2="220" stroke="rgba(255,107,107,.65)" stroke-width="1.3" stroke-dasharray="5 4"/>
+        <text x="56" y="216" fill="#FF6B6B" font-family="Inter" font-size="10.5">Hoà vốn · ROAS 1.0x</text>
+        <!-- ROAS area + line -->
+        <polygon points="193.75,250 251.25,240.7 308.75,124.9 366.25,169.6 423.75,156.7 481.25,93.4 538.75,145.6 596.25,59.5 653.75,67.3 711.25,60.7 711.25,250" fill="rgba(61,220,151,.10)"/>
+        <polyline points="193.75,250 251.25,240.7 308.75,124.9 366.25,169.6 423.75,156.7 481.25,93.4 538.75,145.6 596.25,59.5 653.75,67.3 711.25,60.7" fill="none" stroke="#3DDC97" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="711.25" cy="60.7" r="4.5" fill="#3DDC97"/>
+        <text x="711.25" y="51" fill="#3DDC97" font-family="Space Grotesk" font-size="14" font-weight="700" text-anchor="end">6.31x</text>
+        <text x="308.75" y="116" fill="#3DDC97" font-family="Inter" font-size="11" font-weight="600" text-anchor="middle">4.17x</text>
+        <!-- month labels -->
+        <g fill="#5E6675" font-family="Inter" font-size="10.5" text-anchor="middle">
+          <text x="78.75" y="268">T6</text><text x="136.25" y="268">T7</text><text x="193.75" y="268">T8</text>
+          <text x="251.25" y="268">T9</text><text x="308.75" y="268">T10</text><text x="366.25" y="268">T11</text>
+          <text x="423.75" y="268">T12</text><text x="481.25" y="268">T1</text><text x="538.75" y="268">T2</text>
+          <text x="596.25" y="268">T3</text><text x="653.75" y="268">T4</text><text x="711.25" y="268">T5</text>
+        </g>
+        <g fill="#5E6675" font-family="Inter" font-size="10" text-anchor="middle">
+          <text x="78.75" y="284">2025</text><text x="481.25" y="284">2026</text>
+        </g>
+      </svg>
+      <div class="chart-legend">
+        <i><span class="lg-bar"></span> Spend / tháng</i>
+        <i><span class="lg-line"></span> ROAS / tháng</i>
+        <i><span class="lg-dash"></span> Hoà vốn 1.0x</i>
+      </div>
+    </div>
+
+    <!-- Results -->
+    <p class="sub-h reveal" style="margin-top:48px">Kết quả</p>
+    <div class="results reveal">
+      <div class="results-grid">
+        <div class="res"><div class="v gold" data-count="10" data-dec="0" data-suffix=" tỷ+">0</div><div class="l">Doanh thu tạo ra</div></div>
+        <div class="res"><div class="v g" data-count="5" data-dec="0" data-suffix="x">0</div><div class="l">Blended ROAS</div></div>
+        <div class="res"><div class="v" data-count="2" data-dec="0" data-suffix="K+">0</div><div class="l">Lượt mua hàng</div></div>
+        <div class="res"><div class="v" data-count="12" data-dec="0" data-suffix="+">0</div><div class="l">Thị trường</div></div>
+      </div>
+    </div>
+
+    <!-- Markets top 7 -->
+    <p class="sub-h reveal" style="margin-top:48px">Đa thị trường — 7 thị trường chi tiêu nhiều nhất</p>
+    <div class="mkt-block reveal">
+      <p>Khác biệt lớn nhất giữa các thị trường <b>không nằm ở CPM</b> — mà ở hành vi mua hàng, ý định mua,
+        USP ưa thích, creative style và độ dài funnel. Cùng một creative thắng ở nước này lại thua ở nước khác.</p>
+      <div class="mrow"><div class="mc"><span class="flag-svg"><svg viewBox="0 0 24 16"><rect width="24" height="16" fill="#FE0000"/><rect width="12" height="8" fill="#000095"/><circle cx="6" cy="4" r="2.2" fill="#fff"/><circle cx="6" cy="4" r="1.2" fill="#000095"/></svg></span> Taiwan</div><div class="mtrack"><div class="mfill" data-w="50"></div></div><div class="mm">~50% · base</div></div>
+      <div class="mrow"><div class="mc"><span class="flag-svg"><svg viewBox="0 0 24 16"><rect width="24" height="16" fill="#fff"/><circle cx="12" cy="8" r="4.8" fill="#BC002D"/></svg></span> Japan</div><div class="mtrack"><div class="mfill" data-w="12"></div></div><div class="mm">12% · ROAS 6.6x ↑</div></div>
+      <div class="mrow"><div class="mc"><span class="flag-svg"><svg viewBox="0 0 24 16"><rect width="24" height="16" fill="#DA251D"/><polygon points="12,4 12.9,6.76 15.8,6.76 13.45,8.47 14.35,11.24 12,9.53 9.65,11.24 10.55,8.47 8.2,6.76 11.1,6.76" fill="#FFFF00"/></svg></span> Vietnam</div><div class="mtrack"><div class="mfill" data-w="11"></div></div><div class="mm">11% · CPA thấp nhất</div></div>
+      <div class="mrow"><div class="mc"><span class="flag-svg"><svg viewBox="0 0 24 16"><rect width="24" height="16" fill="#DE2910"/><circle cx="12" cy="8" r="3.4" fill="#fff"/><circle cx="12" cy="8" r="1.7" fill="#DE2910"/></svg></span> Hong Kong</div><div class="mtrack"><div class="mfill" data-w="10"></div></div><div class="mm">10% · ROAS 5.1x</div></div>
+      <div class="mrow"><div class="mc"><span class="flag-svg"><svg viewBox="0 0 24 16"><rect width="24" height="8" fill="#0038A8"/><rect y="8" width="24" height="8" fill="#CE1126"/><polygon points="0,0 10,8 0,16" fill="#fff"/><circle cx="2.8" cy="8" r="1.5" fill="#FCD116"/></svg></span> Philippines</div><div class="mtrack"><div class="mfill" data-w="7"></div></div><div class="mm">7% · CTR 5.6%</div></div>
+      <div class="mrow"><div class="mc"><span class="flag-svg"><svg viewBox="0 0 24 16"><rect width="24" height="16" fill="#00247D"/><rect width="10" height="6" fill="#012169"/><path d="M0 0l10 6M10 0L0 6" stroke="#fff" stroke-width="1"/><path d="M5 0v6M0 3h10" stroke="#fff" stroke-width="1.4"/><path d="M5 0v6M0 3h10" stroke="#CF142B" stroke-width=".7"/><polygon points="17,10 17.9,12.4 20.4,12.4 18.3,13.9 19.1,16 17,14.7 14.9,16 15.7,13.9 13.6,12.4 16.1,12.4" fill="#fff"/></svg></span> Australia</div><div class="mtrack"><div class="mfill" data-w="6"></div></div><div class="mm">6% · phương Tây</div></div>
+      <div class="mrow"><div class="mc"><span class="flag-svg"><svg viewBox="0 0 24 16"><rect width="24" height="16" fill="#fff"/><g fill="#B22234"><rect width="24" height="1.23" y="0"/><rect width="24" height="1.23" y="2.46"/><rect width="24" height="1.23" y="4.92"/><rect width="24" height="1.23" y="7.38"/><rect width="24" height="1.23" y="9.84"/><rect width="24" height="1.23" y="12.3"/><rect width="24" height="1.23" y="14.76"/></g><rect width="10" height="8.6" fill="#3C3B6E"/></svg></span> United States</div><div class="mtrack"><div class="mfill" data-w="4"></div></div><div class="mm">4% · test</div></div>
+      <div class="compare-example">
+        <div class="compare-head">Ví dụ cụ thể — cùng cách chạy, kết quả ngược nhau</div>
+        <div class="compare-grid">
+          <div class="compare-card warn">
+            <div class="compare-h">
+              <span class="flag-svg"><svg viewBox="0 0 24 16"><rect width="24" height="8" fill="#0038A8"/><rect y="8" width="24" height="8" fill="#CE1126"/><polygon points="0,0 10,8 0,16" fill="#fff"/><circle cx="2.8" cy="8" r="1.5" fill="#FCD116"/></svg></span>
+              <span class="compare-name">Philippines</span>
+            </div>
+            <div class="compare-metrics">
+              <div><b class="warn-v">5.6%</b><span>CTR (cao nhất)</span></div>
+              <div><b class="warn-v">~2.4x</b><span>ROAS</span></div>
+            </div>
+            <p class="compare-note">Click nhiều — nhưng convert yếu. Engagement bề mặt cao, intent mua thấp.</p>
+          </div>
+          <div class="compare-card win">
+            <div class="compare-h">
+              <span class="flag-svg"><svg viewBox="0 0 24 16"><rect width="24" height="16" fill="#fff"/><circle cx="12" cy="8" r="4.8" fill="#BC002D"/></svg></span>
+              <span class="compare-name">Japan</span>
+            </div>
+            <div class="compare-metrics">
+              <div><b class="muted-v">2.2%</b><span>CTR (thấp nhất)</span></div>
+              <div><b class="win-v">~6.6x</b><span>ROAS (cao nhất)</span></div>
+            </div>
+            <p class="compare-note">Click ít — nhưng mỗi click là intent thật, sẵn sàng trả tiền.</p>
+          </div>
+        </div>
+        <div class="compare-conclusion">
+          <b>Cùng angle, cùng creative — khách Philippines click nhiều gấp ~2.5x khách Japan nhưng ROAS thấp hơn ~2.8x.</b>
+          Đó là lý do tôi không tối ưu theo CTR đơn lẻ — tối ưu theo <b style="color:var(--green)">ROAS</b>.
+        </div>
+      </div>
+    </div>
+
+    <!-- KOL/UGC creative strategy -->
+    <p class="sub-h reveal" style="margin-top:48px">Creative chiến lược — chọn lọc KOL / UGC video</p>
+    <p class="kol-intro reveal"><b>Lựa chọn UGC/KOL video có sẵn</b> và map từng video vào đúng <b>winning angle</b>
+      + đúng tệp khách cho từng campaign. Bên dưới là 3 video đang chạy ads tốt nhất hiện tại.</p>
+    <div class="kol-grid reveal">
+      <article class="kol-card win">
+        <a href="https://www.instagram.com/p/DRA_xN0DByE" target="_blank" rel="noopener" class="kol-thumb">
+          <img src="assets/meta/greanleila.jpg" alt="@greanleila Reel · Meander Saigon" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="ph" style="display:none">
+            <div class="kolname-ph">@greanleila</div>
+            <div class="thumb-sub">Meander Saigon</div>
+          </div>
+          <span class="top-badge">Best ROAS</span>
+          <span class="igtag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg>
+            Reel
+          </span>
+          <span class="play-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4v16l13-8z"/></svg></span>
+        </a>
+        <div class="kol-body">
+          <div class="kol-meta">Meander Saigon · <b>Offer Information Directly ✅ WIN</b></div>
+          <h5>"Hoàn toàn bị mê hoặc bởi khách sạn này"</h5>
+          <div class="kol-stats">
+            <div class="ks"><b>38.47x</b><small>ROAS</small></div>
+            <div class="ks"><b>81%</b><small>Hook rate</small></div>
+            <div class="ks"><b>11.2%</b><small>Engagement</small></div>
+          </div>
+          <p>KOL review <b>trực diện trải nghiệm</b> — phòng rộng có bồn tắm, yên tĩnh giữa khu sầm uất, coworking zone cho digital nomads. Không so sánh hay thách thức niềm tin — chỉ show ra giá trị thật của sản phẩm.</p>
+          <span class="kol-cta">Xem trên Instagram <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+        </div>
+      </article>
+      <article class="kol-card win">
+        <a href="https://www.instagram.com/p/DRe5uK8gOem" target="_blank" rel="noopener" class="kol-thumb">
+          <img src="assets/meta/venice.jpg" alt="@venice_mendoza Reel thumbnail" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="ph" style="display:none">
+            <div class="kolname-ph">@venice_mendoza</div>
+            <div class="thumb-sub">Oani Hotel · Taipei</div>
+          </div>
+          <span class="top-badge">Top performer</span>
+          <span class="igtag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg>
+            Reel
+          </span>
+          <span class="play-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4v16l13-8z"/></svg></span>
+        </a>
+        <div class="kol-body">
+          <div class="kol-meta">Oani Hotel (Taipei) · <b>Offer Information Directly ✅ WIN</b></div>
+          <h5>"Đối diện ga MRT Tây Môn + đồ ăn miễn phí 24/7"</h5>
+          <div class="kol-stats">
+            <div class="ks"><b>5.2x</b><small>ROAS</small></div>
+            <div class="ks"><b>78.4%</b><small>Hook rate</small></div>
+            <div class="ks"><b>4.24%</b><small>CTR</small></div>
+          </div>
+          <p>KOL liệt kê <b>trực diện</b> mọi tiện ích — vị trí đối diện ga Ximen MRT, basement common space, ghế massage, đồ ăn Đài Loan miễn phí 24/7, "Oani Scent Realm". Kèm code <b>VENICE</b> tạo urgency + attribution rõ ràng.</p>
+          <span class="kol-cta">Xem trên Instagram <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+        </div>
+      </article>
+      <article class="kol-card">
+        <a href="https://www.instagram.com/p/DX_Vmt6DDBA" target="_blank" rel="noopener" class="kol-thumb">
+          <img src="assets/meta/dnvrchoi.jpg" alt="@dnvrchoi Reel thumbnail" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="ph" style="display:none">
+            <div class="kolname-ph">@dnvrchoi</div>
+            <div class="thumb-sub">Meander 1948 · Taipei</div>
+          </div>
+          <span class="igtag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg>
+            Reel
+          </span>
+          <span class="play-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4v16l13-8z"/></svg></span>
+        </a>
+        <div class="kol-body">
+          <div class="kol-meta">Meander 1948 (Taipei) · <b>Call out solution + State as a question ✅ WIN</b></div>
+          <h5>"Đã bao giờ thử ở gần Taipei Main Station chưa?"</h5>
+          <div class="kol-stats">
+            <div class="ks"><b>1.59x</b><small>ROAS</small></div>
+            <div class="ks"><b>70.3%</b><small>Hook rate</small></div>
+            <div class="ks"><b>6.54%</b><small>CTR ↑</small></div>
+          </div>
+          <p>Mở đầu <b>gọi tên thói quen</b> (đa số khách ở Ximending), đặt câu hỏi dẫn dắt sang lựa chọn mới — đưa 4 lý do về Taipei Main Station: transit hub, tour pickup, MRT 3 tuyến, HSR đi tỉnh. Code <b>DENVER</b> = tên KOL → brand recall mạnh.</p>
+          <span class="kol-cta">Xem trên Instagram <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+        </div>
+      </article>
+    </div>
+    <div class="kol-pattern reveal">
+      <b>Pattern chung:</b> cả 3 video thắng vì <b>không trông như quảng cáo</b> — KOL đóng vai user thật, đưa info cụ thể
+      (vị trí, tiện ích, discount code riêng như <b>VENICE, DENVER</b>). 2 angle khác nhau cùng work:
+      <b>Offer Information Directly</b> (Oani + Saigon — show trực diện giá trị thật) và
+      <b>Call out a solution + State as a question</b> (Meander 1948 — đánh vào thói quen người xem để chuyển lựa chọn).
+    </div>
+
+    <!-- Static creative A/B test pairs -->
+    <div class="ab-section reveal">
+      <p class="ab-intro">Bên cạnh UGC/KOL video, mỗi design tôi luôn build <b>ít nhất 2 version theo 2 hướng concept khác nhau</b>
+        để A/B test creative — chọn winner theo data rồi mới scale.</p>
+
+      <div class="ab-pair">
+        <div class="ab-pair-h">Meander Osaka — 2 concept khác hướng</div>
+        <div class="ab-grid">
+          <figure class="ab-card">
+            <div class="ab-thumb">
+              <span class="ab-tag var-a">Variant A</span>
+              <img src="assets/meta/osaka-namba.jpg" alt="Osaka Namba Couple Base" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="ph" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.6"/><path d="m4 18 5-5 4 4 3-3 4 4"/></svg><div class="t">osaka-namba.jpg</div><div class="s">Couple Base · 2-min walk Namba</div></div>
+            </div>
+            <figcaption>
+              <b>"Your couple base in the heart of Namba"</b>
+              <span class="angle">Angle: location proximity — "2 minutes from Namba Station"</span>
+            </figcaption>
+          </figure>
+          <figure class="ab-card">
+            <div class="ab-thumb">
+              <span class="ab-tag var-b">Variant B</span>
+              <img src="assets/meta/osaka-july.jpg" alt="Osaka in July smarter quieter" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="ph" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.6"/><path d="m4 18 5-5 4 4 3-3 4 4"/></svg><div class="t">osaka-july.jpg</div><div class="s">Osaka in July · anti-peak</div></div>
+            </div>
+            <figcaption>
+              <b>"Osaka in July: smarter, quieter, better value"</b>
+              <span class="angle">Angle: anti-peak timing + ratings proof (4.5★)</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="ab-pair">
+        <div class="ab-pair-h">Meander 1948 — 2 concept khác hướng</div>
+        <div class="ab-grid">
+          <figure class="ab-card">
+            <div class="ab-thumb">
+              <span class="ab-tag var-a">Variant A</span>
+              <img src="assets/meta/1948-gift-flat.jpg" alt="1948 Travel gift flat lay" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="ph" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.6"/><path d="m4 18 5-5 4 4 3-3 4 4"/></svg><div class="t">1948-gift-flat.jpg</div><div class="s">Travel gift · flat lay sản phẩm</div></div>
+            </div>
+            <figcaption>
+              <b>"Get a free travel gift"</b>
+              <span class="angle">Angle: offer-first — flat lay sản phẩm cụ thể (Japan/Taiwan/Vietnam curated)</span>
+            </figcaption>
+          </figure>
+          <figure class="ab-card">
+            <div class="ab-thumb">
+              <span class="ab-tag var-b">Variant B</span>
+              <img src="assets/meta/1948-gift-bedroom.jpg" alt="1948 Stay 2 nights bedroom" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="ph" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.6"/><path d="m4 18 5-5 4 4 3-3 4 4"/></svg><div class="t">1948-gift-bedroom.jpg</div><div class="s">Stay 2+ nights · lifestyle bedroom</div></div>
+            </div>
+            <figcaption>
+              <b>"Stay 2+ nights, get a travel gift"</b>
+              <span class="angle">Angle: condition + lifestyle — couple in room, ưu đãi gắn vào trải nghiệm</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <!-- More creative — mini slider, 3 per page -->
+    <div class="more-creative reveal">
+      <div class="more-h">Và những <b>creative khác</b> · đa ngôn ngữ — ZH-TW · EN · DE</div>
+      <div class="more-slider">
+      <div class="more-vp">
+      <div class="more-row" id="moreTrack">
+        <figure class="more-card">
+          <img src="assets/meta/taipei-solo-zh.jpg" alt="Meander Taipei solo (Chinese)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="ph" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.6"/><path d="m4 18 5-5 4 4 3-3 4 4"/></svg><div class="t">taipei-solo-zh.jpg</div><div class="s">Taipei · Solo (中文)</div></div>
+          <figcaption>Taipei · Solo · 中文</figcaption>
+        </figure>
+        <figure class="more-card">
+          <img src="assets/meta/taipei-heart.jpg" alt="Meander Taipei heart of (English)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="ph" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.6"/><path d="m4 18 5-5 4 4 3-3 4 4"/></svg><div class="t">taipei-heart.jpg</div><div class="s">Taipei · Heart of (EN)</div></div>
+          <figcaption>Taipei · Heart of · EN</figcaption>
+        </figure>
+        <figure class="more-card">
+          <img src="assets/meta/saigon-family.jpg" alt="Meander Saigon family base" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="ph" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.6"/><path d="m4 18 5-5 4 4 3-3 4 4"/></svg><div class="t">saigon-family.jpg</div><div class="s">Saigon · Family (EN)</div></div>
+          <figcaption>Saigon · Family · EN</figcaption>
+        </figure>
+        <figure class="more-card">
+          <img src="assets/meta/1948-nightmarket.jpg" alt="Meander 1948 night market summer" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="ph" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.6"/><path d="m4 18 5-5 4 4 3-3 4 4"/></svg><div class="t">1948-nightmarket.jpg</div><div class="s">1948 · Night market (EN)</div></div>
+          <figcaption>1948 · Night market · EN</figcaption>
+        </figure>
+        <figure class="more-card">
+          <img src="assets/meta/taipei-solo-de.jpg" alt="Meander Taipei solo (German)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="ph" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.6"/><path d="m4 18 5-5 4 4 3-3 4 4"/></svg><div class="t">taipei-solo-de.jpg</div><div class="s">Taipei · Solo (DE)</div></div>
+          <figcaption>Taipei · Solo · DE</figcaption>
+        </figure>
+        <figure class="more-card">
+          <img src="assets/meta/taipei-solo-de2.jpg" alt="Meander Taipei solo German v2" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="ph" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.6"/><path d="m4 18 5-5 4 4 3-3 4 4"/></svg><div class="t">taipei-solo-de2.jpg</div><div class="s">Taipei · Solo · DE v2</div></div>
+          <figcaption>Taipei · Solo · DE v2</figcaption>
+        </figure>
+      </div>
+      </div>
+      <button class="more-btn prev" id="morePrev" aria-label="Trước"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg></button>
+      <button class="more-btn next" id="moreNext" aria-label="Sau"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></button>
+      <div class="more-dots" id="moreDots"></div>
+      </div>
+    </div>
+
+    <!-- Featured landing page -->
+    <p class="sub-h reveal" style="margin-top:48px">Trang landing page tôi build — tham khảo trực tiếp</p>
+    <a class="lp-feature reveal" href="https://oani-taipei.staymeander.com/" target="_blank" rel="noopener">
+      <div class="lp-thumb logo-thumb">
+        <img src="assets/meta/oani-logo.png" alt="Oani — Meander Collection" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="ph" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.6"/><path d="m4 18 5-5 4 4 3-3 4 4"/></svg><div class="t">assets/meta/oani-logo.png</div><div class="s">Oani — Meander Collection</div></div>
+      </div>
+      <div class="lp-body">
+        <div class="lp-domain">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+          oani-taipei.staymeander.com</div>
+        <h4>Oani Hotel Taipei — Booking landing page</h4>
+        <p>Đây là <b>một trong những trang landing page tôi đã build mà có performance tốt nhất hiện tại</b> —
+          phục vụ campaign Meta Ads cho Oani (Taipei). Hero rõ thông điệp solo-travel, đẩy Value + Location lên top,
+          CTA "đặt phòng" hiển thị mọi tầng cuộn, tối ưu mobile-first.</p>
+        <span class="lp-cta">Xem trang live
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<div class="wrap"><div class="divider"></div></div>
+
+<!-- ===================== SYSTEMS / PROCESS ===================== -->
+<section id="systems">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Systems &amp; Process</div>
+      <h2>Cách tôi làm việc</h2>
+      <p>Mỗi quảng cáo là một tổ hợp có thể truy vết. Khi kết quả thay đổi, tôi biết chính xác
+        <b style="color:var(--text)">vì sao</b> — và sửa đúng chỗ.</p>
+    </div>
+    <div class="method reveal">
+      <div class="panel">
+        <h4>Testing System</h4>
+        <p class="sub">Mỗi combo được dựng và đo theo các biến cố định, để so sánh công bằng.</p>
+        <h5>Tôi test những gì</h5>
+        <div class="pills">
+          <span class="pill k">Marketing angle</span><span class="pill k">USP / keypoint</span><span class="pill k">Audience</span>
+          <span class="pill k">Funnel stage</span><span class="pill k">Country</span><span class="pill k">Landing page</span>
+        </div>
+        <div class="callout" style="margin-top:24px;font-size:14px;padding:16px 18px">
+          <b>Vì sao quan trọng:</b> khi performance giảm, tôi truy ngược được vấn đề nằm ở
+          góc tiếp cận, thông điệp, audience, funnel stage hay landing page — thay vì đoán mò.
+        </div>
+      </div>
+
+      <div class="panel">
+        <h4>Funnel Diagnostic — chẩn đoán theo từng tầng</h4>
+        <p class="sub">Impression → Click → Landing page → Add to cart → Checkout → Booking. Drop-off ở mỗi bước báo chính xác layer nào đang rớt.</p>
+        <div class="funnel-diag-grid">
+          <div class="funnel-vis">
+            <div class="fstep" style="width:100%"><span>Impression</span><span class="sigtag">CTR · Hook · Thumbstop</span></div>
+            <div class="farrow"><span class="ach">↓</span><span class="pct">~95% drop-off</span></div>
+            <div class="fstep" style="width:88%"><span>Click</span><span class="sigtag">Audience fit</span></div>
+            <div class="farrow"><span class="ach">↓</span><span class="pct">~30% drop-off</span></div>
+            <div class="fstep" style="width:76%"><span>Landing page</span><span class="sigtag">LP engagement</span></div>
+            <div class="farrow worst"><span class="ach">↓</span><span class="pct">~75% drop-off</span><span class="tag-worst">worst leak</span></div>
+            <div class="fstep worst" style="width:60%"><span>Add to cart</span><span class="sigtag">Decision · Trust</span></div>
+            <div class="farrow"><span class="ach">↓</span><span class="pct">~40% drop-off</span></div>
+            <div class="fstep" style="width:50%"><span>Checkout</span><span class="sigtag">Friction</span></div>
+            <div class="farrow"><span class="ach">↓</span><span class="pct">~20% drop-off</span></div>
+            <div class="fstep" style="width:42%"><span>Booking</span><span class="sigtag">Conversion</span></div>
+          </div>
+          <div class="leak-callout">
+            <div class="leak-head">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4M12 17h.01"/></svg>
+              <span>Landing page → Add to cart</span>
+            </div>
+            <p class="leak-desc">Bước rớt mạnh nhất ở ngành khách sạn — khách vào trang nhưng không chọn phòng. Thường do hook không khớp tệp, hình phòng/giá chưa thuyết phục, hoặc USP chưa lên đầu thông điệp.</p>
+            <div class="leak-fix-h">Cách tôi fix</div>
+            <ul class="leak-fix">
+              <li>Đẩy <b>Value</b> (ưu đãi) &amp; <b>Location</b> (gần ga/landmark) lên top hero LP.</li>
+              <li>A/B angle theo tệp (Solo / Couple / Friend) — tránh dùng chung 1 creative.</li>
+              <li>Làm rõ CTA "Chọn phòng", thêm proof (review, hình thật, ưu đãi rõ).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="divider"></div></div>
+
+<!-- ===================== OTHER WORK (SLIDER) ===================== -->
+<section id="other">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>Các dự án khác</h2>
+    </div>
+    <div class="slider reveal">
+      <div class="slider-vp">
+        <div class="slider-track" id="sliderTrack">
+          <!-- Slide 1: Orgalife -->
+          <div class="slide">
+            <div class="slide-img">
+              <img src="assets/other/orgalife.jpg" alt="Orgalife" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="ph" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.6"/><path d="m4 18 5-5 4 4 3-3 4 4"/></svg><div class="t">other/orgalife.jpg</div><div class="s">Creative Orgalife</div></div>
+            </div>
+            <div class="slide-info">
+              <div class="ohead"><span class="ind">Dinh dưỡng · Orgalife</span><span class="period">Q4 2024 – Q1 2025</span></div>
+              <h4>Bán bằng giá trị, không bằng giảm giá</h4>
+              <div class="ometrics">
+                <div class="om"><b>+8.82%</b><span>Doanh thu</span></div>
+                <div class="om"><b>+7.76%</b><span>AOV (giá trị đơn TB)</span></div>
+                <div class="om"><b>−61.14%</b><span>Chi phí khuyến mãi</span></div>
+              </div>
+              <div class="oinsight"><b>Insight:</b> dịch chuyển từ bán bằng giảm giá sang bán bằng <b>giá trị thật</b> — chi phí khuyến mãi giảm hơn 61% mà doanh thu vẫn tăng.</div>
+            </div>
+          </div>
+          <!-- Slide 2: Next project — CTA -->
+          <div class="slide">
+            <div class="slide-img next-slide">
+              <div class="next-visual">
+                <span class="sparkle"><svg viewBox="0 0 64 64" fill="currentColor"><path d="M32 4l3.4 13.2L48 21l-12.6 3.4L32 38l-3.4-13.6L16 21l12.6-3.8z"/><path d="M53 36l1.6 5.2L60 43l-5.4 1.7L53 50l-1.7-5.3L46 43l5.4-1.8z" opacity=".7"/><path d="M12 46l1.2 4.2L18 52l-4.8 1.4L12 58l-1.2-4.6L6 52l4.8-1.4z" opacity=".55"/></svg></span>
+                <div class="next-label">Project <span class="blank"></span></div>
+              </div>
+            </div>
+            <div class="slide-info">
+              <div class="ohead"><span class="ind" style="color:var(--green)">★ Dự án kế tiếp</span></div>
+              <h4>Mong được hợp tác với bạn</h4>
+              <p style="font-size:14.5px;color:var(--muted);line-height:1.6;margin:6px 0 18px">
+                Sẵn sàng mang hệ thống đã chứng minh ở <b style="color:var(--text)">MEANDER + Orgalife</b> sang dự án của bạn —
+                paid social, paid search, landing page, marketing automation. Test có hệ thống, đọc đúng data, scale điều đang thắng.
+              </p>
+              <a href="#contact" class="btn btn-primary" style="align-self:flex-start">Bắt đầu trao đổi
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="slider-btn prev" id="slidePrev" aria-label="Trước"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg></button>
+      <button class="slider-btn next" id="slideNext" aria-label="Sau"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></button>
+      <div class="slider-dots" id="sliderDots"></div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="divider"></div></div>
+
+<!-- CERTIFICATIONS -->
+<section id="certs">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Certifications</div>
+      <h2>Chứng chỉ</h2>
+      <p>Bấm vào từng mục để xác minh trực tiếp.</p>
+    </div>
+    <div class="cert-grid reveal">
+      <a class="cert-card" href="https://www.credly.com/badges/902c7cb8-c382-48e8-88d5-2c530ea83d7f" target="_blank" rel="noopener">
+        <div class="cert-logo">
+          <svg viewBox="0 0 50 30" aria-hidden="true"><path d="M14 5C7 5 4 12 4 15s3 10 10 10c6 0 9-6 11-10 2-4 5-10 11-10 7 0 10 7 10 10s-3 10-10 10c-6 0-9-6-11-10" fill="none" stroke="url(#mg)" stroke-width="5" stroke-linecap="round"/><defs><linearGradient id="mg" x1="0" y1="0" x2="50" y2="0"><stop stop-color="#0064E0"/><stop offset="1" stop-color="#0098FF"/></linearGradient></defs></svg>
+        </div>
+        <div class="cert-body"><div class="iss">Meta</div><h4>Meta Certified Digital Marketing Associate</h4><div class="verify">Xác minh trên Credly</div></div>
+        <span class="cert-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+      </a>
+      <a class="cert-card" href="https://skillshop.credential.net/59c6af4f-49a6-42ef-b9b0-403d7c9a93d8" target="_blank" rel="noopener">
+        <div class="cert-logo">
+          <svg viewBox="0 0 36 36" aria-hidden="true"><rect x="6.5" y="3" width="9" height="23" rx="4.5" fill="#FBBC04" transform="rotate(-28 11 14.5)"/><rect x="20.5" y="3" width="9" height="23" rx="4.5" fill="#4285F4" transform="rotate(28 25 14.5)"/><circle cx="11" cy="28" r="5" fill="#34A853"/></svg>
+        </div>
+        <div class="cert-body"><div class="iss">Google · Skillshop</div><h4>Google Ads Certification</h4><div class="verify">Xác minh trên Skillshop</div></div>
+        <span class="cert-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+      </a>
+      <a class="cert-card" href="https://www.coursera.org/account/accomplishments/verify/4MDMRGFHNN9V" target="_blank" rel="noopener">
+        <div class="cert-logo">
+          <svg viewBox="0 0 36 36" aria-hidden="true"><rect width="36" height="36" rx="9" fill="#0056D2"/><path d="M23.5 13.2a7 7 0 1 0 0 9.6" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round"/></svg>
+        </div>
+        <div class="cert-body"><div class="iss">Coursera · Google</div><h4>Google Ads for Beginners</h4><div class="verify">Xác minh trên Coursera</div></div>
+        <span class="cert-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+      </a>
+      <a class="cert-card" href="https://www.coursera.org/account/accomplishments/specialization/J9FMVVCGRLWW" target="_blank" rel="noopener">
+        <div class="cert-logo">
+          <svg viewBox="0 0 36 36" aria-hidden="true"><rect width="36" height="36" rx="9" fill="#0056D2"/><path d="M23.5 13.2a7 7 0 1 0 0 9.6" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round"/></svg>
+        </div>
+        <div class="cert-body"><div class="iss">Coursera</div><h4>Digital Marketing — Professional Certificate</h4><div class="verify">Xác minh trên Coursera</div></div>
+        <span class="cert-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact reveal">
+      <div class="eyebrow" style="display:block;margin-bottom:14px">Sẵn sàng nhận dự án freelance</div>
+      <h2>Cùng tăng trưởng doanh thu từ paid media</h2>
+      <p>Cần một người không chỉ "chạy ads" mà <b>xây hệ thống để hiểu vì sao ads work</b> và scale được trên nhiều thị trường? Liên hệ với tôi.</p>
+      <div class="contact-actions">
+        <a href="mailto:vvuduythong@gmail.com" class="btn btn-primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg> vvuduythong@gmail.com</a>
+        <a href="tel:+84362167934" class="btn btn-ghost"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h3.5l1.8 4.5-2.3 1.5a12 12 0 0 0 5 5l1.5-2.3 4.5 1.8V19a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg> 0362 167 934</a>
+        <a href="https://www.linkedin.com/in/vuduythong" target="_blank" rel="noopener" class="btn btn-ghost"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3.2 9h3.6v11.5H3.2zM9.3 9h3.45v1.57h.05c.48-.9 1.66-1.85 3.42-1.85 3.66 0 4.33 2.4 4.33 5.53v6.25h-3.6v-5.54c0-1.32-.02-3.02-1.84-3.02-1.85 0-2.13 1.44-2.13 2.92v5.64H9.3z"/></svg> LinkedIn</a>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <footer>
+      <div class="foot-inner">
+        <div>
+          <div class="brand"><span class="dot"></span> Vũ Duy Thông (Mason)</div>
+          <div class="muted" style="font-size:13px;margin-top:8px">Growth Marketing Specialist</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</section>
+
+<script>
+(function(){
+  var burger=document.getElementById('burger'), mm=document.getElementById('mobileMenu');
+  if(burger){burger.addEventListener('click',function(){mm.classList.toggle('open');});
+    mm.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mm.classList.remove('open');});});}
+
+  function fmt(n,dec){var s=n.toFixed(dec);if(dec===0&&Math.abs(n)>=1000){s=Math.round(n).toLocaleString('en-US');}return s;}
+  function animate(el){
+    var target=parseFloat(el.getAttribute('data-count'));
+    var dec=parseInt(el.getAttribute('data-dec')||'0',10);
+    var suf=el.getAttribute('data-suffix')||'', pre=el.getAttribute('data-prefix')||'';
+    var dur=1400,start=null,finalTxt=pre+fmt(target,dec)+suf;
+    function step(ts){if(!start)start=ts;var p=Math.min((ts-start)/dur,1);var e=1-Math.pow(1-p,3);
+      el.textContent=pre+fmt(target*e,dec)+suf;if(p<1)requestAnimationFrame(step);else el.textContent=finalTxt;}
+    requestAnimationFrame(step);
+    setTimeout(function(){el.textContent=finalTxt;},dur+250);
+  }
+  function fillBars(scope){scope.querySelectorAll('.mfill').forEach(function(b){b.style.width=(b.getAttribute('data-w')||0)+'%';});}
+  function reveal(el){
+    el.classList.add('in');
+    el.querySelectorAll('[data-count]').forEach(function(c){if(!c.dataset.done){c.dataset.done='1';animate(c);}});
+    fillBars(el);
+  }
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){if(e.isIntersecting){reveal(e.target);io.unobserve(e.target);}});
+  },{threshold:.12});
+  var hasIO=typeof IntersectionObserver!=='undefined';
+  var items=document.querySelectorAll('.reveal');
+  if(hasIO){items.forEach(function(el){io.observe(el);});}
+  else{items.forEach(reveal);}
+  setTimeout(function(){
+    var vh=window.innerHeight||800;
+    document.querySelectorAll('.reveal:not(.in)').forEach(function(el){if(el.getBoundingClientRect().top < vh){reveal(el);}});
+  },1800);
+
+  /* more creative mini slider — show N per page, slide by page */
+  var mTrack=document.getElementById('moreTrack');
+  if(mTrack){
+    var mVp=mTrack.parentElement;
+    var mDotsWrap=document.getElementById('moreDots');
+    function mPerPage(){return window.innerWidth<=560?2:3;}
+    function mPages(){return Math.ceil(mTrack.children.length/mPerPage());}
+    var mIdx=0;
+    function buildMDots(){
+      mDotsWrap.innerHTML='';
+      var n=mPages();
+      for(var i=0;i<n;i++){var d=document.createElement('button');d.className='more-dot'+(i===0?' active':'');d.setAttribute('aria-label','Page '+(i+1));(function(k){d.addEventListener('click',function(){mGo(k);});})(i);mDotsWrap.appendChild(d);}
+    }
+    function mGo(n){
+      var pages=mPages();
+      mIdx=((n%pages)+pages)%pages;
+      var w=mVp.offsetWidth+10;
+      mTrack.style.transform='translateX(-'+(mIdx*w)+'px)';
+      var dots=mDotsWrap.children;
+      for(var j=0;j<dots.length;j++)dots[j].className='more-dot'+(j===mIdx?' active':'');
+    }
+    buildMDots();
+    document.getElementById('moreNext').addEventListener('click',function(){mGo(mIdx+1);});
+    document.getElementById('morePrev').addEventListener('click',function(){mGo(mIdx-1);});
+    window.addEventListener('resize',function(){buildMDots();mGo(0);});
+  }
+
+  /* slider */
+  var track=document.getElementById('sliderTrack');
+  if(track){
+    var slides=track.children.length, idx=0;
+    var dotsWrap=document.getElementById('sliderDots');
+    for(var i=0;i<slides;i++){var d=document.createElement('button');d.className='dot'+(i===0?' active':'');d.setAttribute('aria-label','Slide '+(i+1));(function(k){d.addEventListener('click',function(){go(k);});})(i);dotsWrap.appendChild(d);}
+    var dots=dotsWrap.children;
+    function go(n){idx=(n+slides)%slides;track.style.transform='translateX('+(-idx*100)+'%)';for(var j=0;j<dots.length;j++)dots[j].className='dot'+(j===idx?' active':'');}
+    document.getElementById('slideNext').addEventListener('click',function(){go(idx+1);});
+    document.getElementById('slidePrev').addEventListener('click',function(){go(idx-1);});
+    var auto=setInterval(function(){go(idx+1);},7000);
+    track.parentElement.addEventListener('mouseenter',function(){clearInterval(auto);});
+  }
+})();
+</script>
+</body>
+</html>
